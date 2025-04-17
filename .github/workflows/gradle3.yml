@@ -41,7 +41,7 @@ jobs:
     # - name: Build with Gradle 8.9
     #   run: gradle build
 
-- name: Find and copy APK
+    - name: Find and copy APK
       run: |
         file=$(find . -name "*.apk" | head -n 1)
         if [[ -n "$file" ]]; then
